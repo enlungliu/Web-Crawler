@@ -5,7 +5,8 @@
 ##2018/03/27 google finance api 失效
 
 Data Sources
-[This link](http://finance.google.com/finance/info?client=ig&q=TPE:2330) (has no title attribute.)
+
+[google finance](http://finance.google.com/finance/info?client=ig&q=TPE:2330)
 
 
 Content
