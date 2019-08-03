@@ -1,3 +1,9 @@
+"""
+Created on Fri May  18 10:13:35 2018
+
+@author: aaronliu
+"""
+
 import requests
 import json
 from datetime import datetime, timedelta
