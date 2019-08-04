@@ -6,13 +6,13 @@
 
 Data Sources
 
-      [Yahoo Finance](https://finance.yahoo.com/quote/TWI)
+   [Yahoo Finance](https://finance.yahoo.com/quote/TWI)
 
-      [Google Finance](http://finance.google.com/finance/info?client=ig&q=TPE:2330)
+   [Google Finance](http://finance.google.com/finance/info?client=ig&q=TPE:2330)
 
-      [TWSE](http://www.twse.com.tw/exchangeReport/MI_INDEX?response=csv&date=20180328&type=ALL)
+   [TWSE](http://www.twse.com.tw/exchangeReport/MI_INDEX?response=csv&date=20180328&type=ALL)
 
-      [Twitter](https://twitter.com/)
+   [Twitter](https://twitter.com/)
 
 
 Content
