@@ -1,8 +1,8 @@
 # Web-Crawler
 
-##2017/05/16 yahoo finance api is invalid
+##From 2017/05/16, yahoo finance api is invalid
 
-##2018/03/27 google finance api is invalid
+##From 2018/03/27, google finance api is invalid
 
 Data Sources
 
