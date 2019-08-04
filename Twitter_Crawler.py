@@ -4,7 +4,6 @@ Created on Mon May  6 11:53:09 2019
 
 @author: aaronliu
 """
-
 import tweepy           
 import pandas as pd     
 import numpy as np      
@@ -12,13 +11,13 @@ from IPython.display import display
 import matplotlib.pyplot as plt
 import seaborn as sns
 %matplotlib inline
-from credentials import *    # This will allow us to use the keys as variables
+from credentials import *    # Allow us to use the keys as variables
 
-# Fill these contants by yourself. 
-CONSUMER_KEY = "Dld6JjsTA9abZIauWiSW5676b"
-CONSUMER_SECRET = "7WCabPYhZ0nZchT6YCUaptp6KAufc6NqzyMvPN5vUfVRkojVra"
-ACCESS_TOKEN = "967419879522365440-UzqRNggHY1NYqiBfwAqJJzwXV3JWONz"
-ACCESS_SECRET = "V7JTxAMl0bP6koELxHLg73styCHvrxk8aMFg0spullaKz"
+# Fill these contants with personal key and token. 
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
+ACCESS_TOKEN = ""
+ACCESS_SECRET = ""
 
 # API's setup:
 def twitter_setup():
@@ -34,11 +33,12 @@ def twitter_setup():
     api = tweepy.API(auth, wait_on_rate_limit=True)
     return api
 
-
 # Create an extractor object:
 extractor = twitter_setup()
-# Create a tweet list as follows:
-tweets = extractor.user_timeline(screen_name="TheStJames_", count=200)
+# Create a tweet list 
+# Type account id in screen name
+# Could only extract 200 tweets at most
+tweets = extractor.user_timeline(screen_name="", count=200)
 print("Number of tweets extracted: {}.\n".format(len(tweets)))
 
 # Print the most recent 5 tweets :
@@ -55,12 +55,14 @@ for tweet in private_tweets:
     print (tweet.text)
 
 # Print tweets on public page
-public_tweets = api.user_timeline('TheStJames_', count=200)
+# Type account id
+public_tweets = api.user_timeline("", count=200)
 for tweet in public_tweets:
     print (tweet.text)
     
 # Search for accounts that have sent tweets including the key word we want
-for tweet in tweepy.Cursor(api.search,q='TheStJames_').items(100):
+# Type account id in query
+for tweet in tweepy.Cursor(api.search,q="").items(100):
     print('Tweet by: @' + tweet.user.screen_name)
     
    
@@ -114,7 +116,7 @@ sources = []
 for source in data['Source']:
     if source not in sources:
         sources.append(source)
-        
+      
 # Print sources list
 print("Creation of content sources:")
 for source in sources:
